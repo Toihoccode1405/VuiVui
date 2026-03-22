@@ -30,24 +30,18 @@ Lấy cảm hứng từ [Superpowers](https://github.com/obra/superpowers), tố
 
 ## ⚡ Cài đặt
 
-### Antigravity / Gemini CLI
+Mở terminal **trong thư mục dự án** cần cài, chạy **1 lệnh**:
+
+### Antigravity (Windows PowerShell)
+
+```powershell
+irm https://raw.githubusercontent.com/Toihoccode1405/VuiVui/master/install.ps1 | iex
+```
+
+### Gemini CLI
 
 ```
 gemini extensions install https://github.com/Toihoccode1405/VuiVui
-```
-
-Cập nhật:
-```
-gemini extensions update vuivui
-```
-
-### Thủ công (copy vào project)
-
-Copy `.agent/workflows/` vào root project:
-
-```bash
-git clone https://github.com/Toihoccode1405/VuiVui.git
-cp -r VuiVui/.agent/workflows/ your-project/.agent/workflows/
 ```
 
 ### Verify
