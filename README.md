@@ -28,42 +28,31 @@ Lấy cảm hứng từ [Superpowers](https://github.com/obra/superpowers), tố
 - **YAGNI + DRY** — không over-engineer, không lặp code
 - **Tối thiểu token** — trả lời ngắn gọn, code > lời, không repeat
 
-## ⚡ Cài đặt cho Antigravity (Google Gemini)
+## ⚡ Cài đặt
 
-### Cách 1: Clone trực tiếp vào project (Recommended)
+### Antigravity / Gemini CLI
 
-Copy thư mục `.agent/workflows/` vào root project của bạn:
+```
+gemini extensions install https://github.com/Toihoccode1405/VuiVui
+```
+
+Cập nhật:
+```
+gemini extensions update vuivui
+```
+
+### Thủ công (copy vào project)
+
+Copy `.agent/workflows/` vào root project:
 
 ```bash
-# Clone repo
 git clone https://github.com/Toihoccode1405/VuiVui.git
-
-# Copy workflows vào project của bạn
-cp -r VuiVui/.agent/workflows/ /path/to/your-project/.agent/workflows/
+cp -r VuiVui/.agent/workflows/ your-project/.agent/workflows/
 ```
 
-### Cách 2: Clone vào thư mục chung, symlink vào các projects
+### Verify
 
-```bash
-# Clone 1 lần
-git clone https://github.com/Toihoccode1405/VuiVui.git D:/Dev/VuiVui
-
-# Symlink vào project cần dùng (Windows - Run as Admin)
-mklink /D "D:\YourProject\.agent\workflows" "D:\Dev\VuiVui\.agent\workflows"
-
-# Symlink vào project cần dùng (Linux/Mac)
-ln -s /path/to/VuiVui/.agent/workflows /path/to/your-project/.agent/workflows
-```
-
-### Cách 3: Dùng trực tiếp trong thư mục VuiVui
-
-Mở thư mục `VuiVui` làm workspace trong IDE, Antigravity sẽ tự động nhận diện workflows.
-
-### Verify cài đặt
-
-Sau khi cài, kiểm tra trong Antigravity:
-1. Mở conversation mới
-2. Gõ `/00-vuivui.core` — nếu Antigravity hiểu và respond theo workflow → ✅ thành công
+Mở conversation mới → gõ `/00-vuivui.core` → nếu AI respond theo workflow → ✅ OK
 
 ## 📁 Cấu trúc
 

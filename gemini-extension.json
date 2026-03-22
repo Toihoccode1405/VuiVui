@@ -1,0 +1,6 @@
+{
+  "name": "vuivui",
+  "description": "Agentic workflows for efficient coding — brainstorm, implement, debug, review, verify, optimize. Inspired by Superpowers, 83% less tokens.",
+  "version": "1.0.0",
+  "contextFileName": "GEMINI.md"
+}
